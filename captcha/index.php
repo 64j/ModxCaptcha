@@ -1,7 +1,7 @@
 <?php
-//if(!$_SERVER['HTTP_REFERER'] || stripos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) === false) {
-//	die('HACK?');
-//}
+if(!$_SERVER['HTTP_REFERER'] || stripos($_SERVER['HTTP_REFERER'], $_SERVER['SERVER_NAME']) === false) {
+	die('HACK?');
+}
 
 define('MODX_API_MODE', true);
 include_once(dirname(__FILE__) . "../../../index.php");
